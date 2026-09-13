@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité · Couples Break</title>
+<meta name="description" content="Ce que l'application Couples Break fait de vos données personnelles.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap">
+<style>
+:root {
+  --ground:#FBF7F3; --surface:#FFFFFF; --sunken:#F3EAE1; --line:#E7DACE;
+  --text:#14100E; --muted:#8C7563; --subtle:#A8927E;
+  --gold:#C69B63; --gold-deep:#96703E; --gold-wash:#F7EEE0;
+  --alert:#9E4237; --alert-wash:#F8E7E4;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:#14100E; --surface:#1F1815; --sunken:#1A1512; --line:#2E2521;
+    --text:#FBF7F3; --muted:#B9A492; --subtle:#8C7563;
+    --gold:#C69B63; --gold-deep:#E0BC8C; --gold-wash:#251C13;
+    --alert:#E59183; --alert-wash:#241513;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--text);font-family:var(--body);
+  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.page{max-width:720px;margin:0 auto;padding-inline:24px;padding-block:52px 72px}
+@media(max-width:520px){.page{padding-inline:18px;padding-block:34px 56px}}
+a{color:var(--gold-deep);text-underline-offset:3px}
+h1,h2,h3{text-wrap:balance;margin:0}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,6.5vw,40px);
+  line-height:1.1;letter-spacing:-.02em}
+h2{font-family:var(--display);font-weight:600;font-size:23px;line-height:1.3;
+  letter-spacing:-.01em;margin-top:44px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+h3{font-size:16px;font-weight:600;margin-top:28px}
+p{margin:14px 0;max-width:65ch}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 12px}
+.lead{font-size:17px;color:var(--muted);margin-top:16px}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:30px;
+  font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.01em}
+.brand .heart{color:var(--gold)}
+.brand a{text-decoration:none;color:inherit}
+ul{padding-left:20px;margin:12px 0;max-width:65ch}
+li{margin:6px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:20px 22px;margin-top:18px}
+.card h3{margin-top:0}
+.card p:last-child{margin-bottom:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{font-size:11.5px;font-weight:600;letter-spacing:.02em;padding:3px 10px;
+  border-radius:999px;background:var(--sunken);color:var(--muted)}
+.tag.sensitive{background:var(--alert-wash);color:var(--alert)}
+.tag.gold{background:var(--gold-wash);color:var(--gold-deep)}
+.kv{margin-top:14px;font-size:14px;color:var(--muted)}
+.kv b{color:var(--text);font-weight:600}
+.summary{background:var(--gold-wash);border-radius:14px;padding:20px 22px;margin-top:26px}
+.summary p{margin:0;max-width:62ch}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle)}
+.scroll{overflow-x:auto}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--subtle)}
+footer p{max-width:65ch;margin:8px 0}
+.nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:13.5px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="brand"><a href="./"><span class="heart">&#9829;</span> Couples Break</a></p>
+
+  <p class="eyebrow">Application mobile</p>
+  <h1>Politique de confidentialit&eacute;</h1>
+  <p class="lead">Ce que nous faisons de vos informations, et ce que nous n'en faisons pas.</p>
+
+  <div class="summary">
+    <p>Nous ne collectons que ce qui sert &agrave; organiser votre s&eacute;jour. Rien n'est vendu,
+    rien n'est c&eacute;d&eacute;, aucune publicit&eacute;, aucun traceur. Vous pouvez &agrave; tout moment
+    consulter vos donn&eacute;es, les r&eacute;cup&eacute;rer, les corriger, revenir sur vos accords ou
+    demander leur suppression, directement depuis l'application.</p>
+  </div>
+
+  <h2>Qui est responsable de vos donn&eacute;es</h2>
+  <p><b>Sendor Dorcent</b><br>Personne physique, organisateur des séjours Couples Break</p>
+  <p>Pour toute question sur vos donn&eacute;es ou pour exercer vos droits, une seule adresse :
+  <a href="mailto:couplesbreak.privacy@gmail.com">couplesbreak.privacy@gmail.com</a>.
+  Nous r&eacute;pondons sous 30 jours.</p>
+  <p>Le r&egrave;glement europ&eacute;en exige l'identit&eacute; du responsable et un moyen de le
+  contacter. C'est cette adresse ; aucune adresse postale n'est publi&eacute;e, et elle n'est
+  pas requise.</p>
+
+  <h2>Ce que nous collectons, et pourquoi</h2>
+  <p>Chaque usage est s&eacute;par&eacute; des autres. Ceux marqu&eacute;s « facultatif » d&eacute;pendent
+  d'un accord que vous pouvez retirer &agrave; tout moment, sans cons&eacute;quence sur votre s&eacute;jour.</p>
+  
+  <div class="card">
+    <h3>Organiser votre séjour</h3>
+    <p>Vous accueillir, vous attribuer une chambre, vous donner accès au programme et aux informations pratiques du week-end.</p>
+    <div class="kv"><b>Informations concernées :</b> Prénom et nom &middot; Adresse e-mail et numéro de téléphone &middot; Couple auquel vous appartenez &middot; Numéro de chambre et heure d'arrivée</div>
+    <div class="kv"><b>Qui y accède :</b> L'équipe organisatrice de Couples Break &middot; L'hôtel, pour la seule attribution des chambres</div>
+    <div class="kv"><b>Combien de temps :</b> trois mois après la fin du séjour</div>
+    <div class="meta">
+      <span class="tag">Exécution de votre inscription au séjour</span>
+      
+      
+    </div>
+  </div>
+  <div class="card">
+    <h3>Adapter les repas à vos contraintes</h3>
+    <p>Transmettre vos allergies, intolérances et régimes alimentaires à l'équipe de restauration et au chef de l'hôtel, pour que vous puissiez manger en sécurité. Les échanges que vous nous adressez sur le thème « Repas » relèvent du même usage, et de la même durée.</p>
+    <div class="kv"><b>Informations concernées :</b> Allergies alimentaires &middot; Intolérances et régimes particuliers &middot; Vos messages sur le thème « Repas »</div>
+    <div class="kv"><b>Qui y accède :</b> L'équipe logistique de Couples Break &middot; Le chef de cuisine de l'hôtel</div>
+    <div class="kv"><b>Combien de temps :</b> sept jours après la fin du séjour, fiche et fil de discussion ensemble</div>
+    <div class="meta">
+      <span class="tag">Votre consentement explicite</span>
+      <span class="tag sensitive">Donn&eacute;e de sant&eacute;</span>
+      <span class="tag gold">Facultatif, r&eacute;vocable &agrave; tout moment</span>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Communiquer avec vous pendant le séjour</h3>
+    <p>Vous transmettre les annonces et les rappels du programme, et répondre aux questions que vous nous adressez dans l'application. Vos échanges sur le thème « Repas » font exception : ils sont supprimés au bout de sept jours, avec vos contraintes alimentaires.</p>
+    <div class="kv"><b>Informations concernées :</b> Contenu de vos messages &middot; Date et heure d’envoi et de lecture</div>
+    <div class="kv"><b>Qui y accède :</b> L'équipe organisatrice de Couples Break</div>
+    <div class="kv"><b>Combien de temps :</b> trois mois après la fin du séjour, sept jours pour le thème « Repas »</div>
+    <div class="meta">
+      <span class="tag">Exécution de votre inscription au séjour</span>
+      
+      
+    </div>
+  </div>
+  <div class="card">
+    <h3>Vous envoyer des notifications</h3>
+    <p>Vous prévenir sur votre téléphone d'une annonce importante ou d'un rendez-vous imminent, même application fermée.</p>
+    <div class="kv"><b>Informations concernées :</b> Identifiant technique de notification de votre appareil &middot; Type d’appareil (iOS ou Android)</div>
+    <div class="kv"><b>Qui y accède :</b> L'équipe organisatrice de Couples Break &middot; Expo, Apple et Google, qui acheminent la notification jusqu’à votre appareil</div>
+    <div class="kv"><b>Combien de temps :</b> trois mois, ou dès la désinstallation de l’application</div>
+    <div class="meta">
+      <span class="tag">Votre consentement</span>
+      
+      <span class="tag gold">Facultatif, r&eacute;vocable &agrave; tout moment</span>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Utiliser des photos du séjour</h3>
+    <p>Utiliser les photos et vidéos prises pendant le week-end pour vos souvenirs et, si vous l'acceptez, pour présenter Couples Break sur nos réseaux sociaux.</p>
+    <div class="kv"><b>Informations concernées :</b> Photographies et vidéos sur lesquelles vous apparaissez</div>
+    <div class="kv"><b>Qui y accède :</b> L'équipe organisatrice de Couples Break &middot; Le public, pour les seules publications sur nos réseaux sociaux</div>
+    <div class="kv"><b>Combien de temps :</b> jusqu'au retrait de votre accord</div>
+    <div class="meta">
+      <span class="tag">Votre consentement</span>
+      
+      <span class="tag gold">Facultatif, r&eacute;vocable &agrave; tout moment</span>
+    </div>
+  </div>
+
+  <h2>Les accords que nous vous demandons</h2>
+  <p>Le r&egrave;glement exige un consentement <b>s&eacute;par&eacute; par finalit&eacute;</b> : une case unique
+  « j'accepte tout » n'en serait pas un. Dans l'application, chacun de ces accords est
+  pr&eacute;sent&eacute; seul, et tous sont &agrave; « non » par d&eacute;faut.</p>
+  <div class="scroll"><table>
+    <tr><th>Accord</th><th>Ce qu'il autorise</th><th></th></tr>
+    <tr>
+      <td><b>Politique de confidentialité</b></td>
+      <td>J'ai lu comment mes données sont utilisées et je souhaite utiliser l'application.</td>
+      <td><span class="tag">N&eacute;cessaire</span></td>
+    </tr><tr>
+      <td><b>Conditions d'utilisation et règles de vie</b></td>
+      <td>J'accepte les conditions d'utilisation et je m'engage à respecter les règles de vie.</td>
+      <td><span class="tag">N&eacute;cessaire</span></td>
+    </tr><tr>
+      <td><b>Allergies et régimes alimentaires</b></td>
+      <td>J'accepte que mes allergies et contraintes alimentaires soient transmises à l'équipe et au chef de l'hôtel.</td>
+      <td><span class="tag gold">Facultatif</span></td>
+    </tr><tr>
+      <td><b>Notifications</b></td>
+      <td>J'accepte de recevoir les annonces et les rappels du programme sur mon téléphone.</td>
+      <td><span class="tag gold">Facultatif</span></td>
+    </tr><tr>
+      <td><b>Droit à l’image</b></td>
+      <td>J'accepte d'apparaître sur les photos et vidéos publiées par Couples Break.</td>
+      <td><span class="tag gold">Facultatif</span></td>
+    </tr>
+  </table></div>
+
+  <h2>Vos droits</h2>
+  <p>Les cinq premiers s'exercent directement depuis l'application, dans l'&eacute;cran
+  « Mes donn&eacute;es », sans avoir &agrave; nous &eacute;crire ni &agrave; attendre.</p>
+  <ul>
+    <li><b>Accéder à vos données</b> : Consulter l'ensemble des informations que nous détenons sur vous. <span class="tag gold">Dans l'application</span></li><li><b>Les récupérer</b> : Obtenir une copie de vos données dans un format lisible et réutilisable ailleurs. <span class="tag gold">Dans l'application</span></li><li><b>Les corriger</b> : Faire rectifier une information inexacte ou incomplète. <span class="tag gold">Dans l'application</span></li><li><b>Les faire supprimer</b> : Demander l'effacement de votre compte et de vos données. Nous les supprimons sous 30 jours. <span class="tag gold">Dans l'application</span></li><li><b>Retirer un accord</b> : Revenir à tout moment sur un consentement, sans avoir à vous justifier et sans conséquence sur votre séjour. <span class="tag gold">Dans l'application</span></li><li><b>Vous opposer ou limiter l'usage</b> : Demander que nous cessions ou restreignions un traitement fondé sur notre intérêt légitime.</li><li><b>Saisir la CNIL</b> : Introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (cnil.fr) si notre réponse ne vous satisfait pas.</li>
+  </ul>
+
+  <h2>&Agrave; qui nous confions des donn&eacute;es</h2>
+  <p>Nous faisons appel &agrave; ces prestataires pour faire fonctionner l'application. Aucun
+  n'a le droit d'utiliser vos donn&eacute;es &agrave; ses propres fins.</p>
+  <div class="scroll"><table>
+    <tr><th>Prestataire</th><th>R&ocirc;le</th><th>O&ugrave;</th><th>Garanties</th></tr>
+    <tr>
+      <td><b>Supabase</b></td>
+      <td>Hébergement de la base de données et de l'authentification</td>
+      <td>Serveurs situés à Paris (région eu-west-3)</td>
+      <td>Contrat de sous-traitance conforme à l'article 28 du RGPD. Les données restent stockées en France.</td>
+    </tr><tr>
+      <td><b>Expo</b></td>
+      <td>Compilation de l'application, mises à jour et acheminement des notifications</td>
+      <td>États-Unis<br><span class="tag sensitive">Hors UE</span></td>
+      <td>Clauses contractuelles types de la Commission européenne. Seuls le titre et le texte de la notification transitent : aucune donnée de santé n’y figure jamais.</td>
+    </tr><tr>
+      <td><b>Apple</b></td>
+      <td>Distribution de l'application et service de notifications iOS</td>
+      <td>États-Unis et Union européenne<br><span class="tag sensitive">Hors UE</span></td>
+      <td>Clauses contractuelles types et Data Privacy Framework.</td>
+    </tr><tr>
+      <td><b>Google</b></td>
+      <td>Distribution de l'application et service de notifications Android</td>
+      <td>États-Unis et Union européenne<br><span class="tag sensitive">Hors UE</span></td>
+      <td>Clauses contractuelles types et Data Privacy Framework.</td>
+    </tr>
+  </table></div>
+
+  <h2>Comment vos donn&eacute;es sont prot&eacute;g&eacute;es</h2>
+  <ul><li>Chaque couple ne voit que ses propres informations : le numéro de chambre, les messages et les contraintes alimentaires d'un autre couple lui sont inaccessibles.</li><li>Les règles d'accès sont appliquées par la base de données elle-même, et non par l'application : elles ne peuvent pas être contournées.</li><li>Les notes internes de l'organisation sont stockées séparément et ne sont jamais transmises à l'application d'un participant.</li><li>Tous les échanges avec nos serveurs sont chiffrés.</li><li>Vos contraintes alimentaires ne sont jamais recopiées dans une conversation d'équipe : elles restent sur votre fiche, dont chaque consultation est enregistrée.</li><li>Nous ne collectons aucune donnée de localisation, aucun identifiant publicitaire, et l'application ne contient aucun traceur.</li><li>Vos données ne sont ni vendues, ni louées, ni transmises à des tiers à des fins commerciales.</li></ul>
+
+  <h2>Combien de temps nous les gardons</h2>
+  <p>Les dur&eacute;es ci-dessous ne sont pas des intentions : elles sont ex&eacute;cut&eacute;es
+  automatiquement par la base de donn&eacute;es, qui efface ce qui a expir&eacute;.</p>
+  <ul>
+    <li><b>Organiser votre séjour</b> : trois mois après la fin du séjour.</li><li><b>Adapter les repas à vos contraintes</b> : sept jours après la fin du séjour, fiche et fil de discussion ensemble.</li><li><b>Communiquer avec vous pendant le séjour</b> : trois mois après la fin du séjour, sept jours pour le thème « Repas ».</li><li><b>Vous envoyer des notifications</b> : trois mois, ou dès la désinstallation de l’application.</li><li><b>Utiliser des photos du séjour</b> : jusqu'au retrait de votre accord.</li>
+    <li><b>Traces de consultation des donn&eacute;es de sant&eacute;</b> : douze mois, pour pouvoir
+    vous dire qui a consult&eacute; vos contraintes alimentaires, et quand.</li>
+  </ul>
+
+  <h2>Ce que devient votre acc&egrave;s apr&egrave;s le s&eacute;jour</h2>
+  <p>Votre compte est li&eacute; &agrave; une &eacute;dition. Il s'&eacute;teint en trois temps, et chacun
+  vous est annonc&eacute; ici avant d'arriver.</p>
+  <div class="scroll"><table>
+    <tr><th>Quand</th><th>Ce qui se passe</th></tr>
+    <tr>
+      <td><b>Pendant le séjour</b></td>
+      <td><b>Tout est ouvert</b><br>Vous consultez le programme, vous écrivez à l'équipe, elle vous répond. C'est le moment pour lequel l'application existe.</td>
+    </tr><tr>
+      <td><b>La semaine qui suit</b></td>
+      <td><b>Rien ne change encore</b><br>Votre accès reste entier pendant sept jours. Vous pouvez encore nous écrire, relire les annonces, et récupérer une copie de vos données depuis l'écran « Mes données ».</td>
+    </tr><tr>
+      <td><b>Au bout de 7 jours</b></td>
+      <td><b>Tout ce qui touche à vos repas est effacé, et vous passez en lecture</b><br>Vos allergies et régimes n'ont plus d'usage une fois le dernier repas servi : ils sont supprimés le même jour, votre fiche comme les messages que vous nous avez adressés sur le thème « Repas ». Votre accès reste ouvert, mais en lecture seule : vous ne pouvez plus écrire à une équipe qui n'est plus en poste sur cette édition et ne pourrait pas vous répondre. Exporter vos données, retirer un accord ou demander l'effacement restent possibles : ce sont vos droits, et ils ne se ferment pas.</td>
+    </tr><tr>
+      <td><b>Au bout de 90 jours</b></td>
+      <td><b>Votre compte et vos données sont supprimés</b><br>Votre profil, votre couple, vos messages et votre compte de connexion sont effacés. Il n'en reste rien, et votre code personnel ne fonctionne plus. Si vous revenez lors d'une prochaine édition, un nouveau code vous sera remis : aucun ancien accès n'est réactivé, et c'est précisément ce qui garantit que les données d'alors n'existent plus.</td>
+    </tr>
+  </table></div>
+
+  <h2>Si notre r&eacute;ponse ne vous satisfait pas</h2>
+  <p>&Eacute;crivez-nous d'abord : dans la grande majorit&eacute; des cas, un &eacute;change suffit.
+  Vous pouvez &eacute;galement introduire une r&eacute;clamation aupr&egrave;s de la Commission nationale
+  de l'informatique et des libert&eacute;s, sur <a href="https://www.cnil.fr">cnil.fr</a>.</p>
+
+  <footer>
+    <p>Version 2026-09-1 &middot; Sendor Dorcent, Personne physique, organisateur des séjours Couples Break.</p>
+    <p>Pour toute question ou pour exercer vos droits : <a href="mailto:couplesbreak.privacy@gmail.com">couplesbreak.privacy@gmail.com</a>. Nous répondons sous 30 jours.</p>
+    <p class="nav">
+      <a href="./confidentialite.html">Politique de confidentialité</a>
+      <a href="./conditions.html">Conditions d'utilisation</a>
+      <a href="./regles.html">Règles de vie</a>
+    </p>
+  </footer>
+</div>
+</body>
+</html>
