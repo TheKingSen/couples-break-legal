@@ -1,38 +1,29 @@
 name: Publication des pages légales
 
+# GitHub Pages sert ce dépôt depuis la branche gh-pages. Personne n'a besoin
+# de le savoir : on ne touche qu'à main, et ce workflow recopie main sur
+# gh-pages à chaque push. La mise en ligne suit toute seule.
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: pages-legales
   cancel-in-progress: false
 
 jobs:
   publier:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploiement.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: Activer GitHub Pages si besoin
-        uses: actions/configure-pages@v5
         with:
-          enablement: true
+          fetch-depth: 0
 
-      - name: Préparer le site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Mettre en ligne
-        id: deploiement
-        uses: actions/deploy-pages@v4
+      - name: Recopier main sur gh-pages
+        # gh-pages n'est qu'un miroir de main : on l'écrase sans état d'âme.
+        run: git push --force origin HEAD:gh-pages
